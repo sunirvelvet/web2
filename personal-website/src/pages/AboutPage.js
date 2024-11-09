@@ -1,12 +1,16 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import Footer from '../components/Footer';
 
 const AboutPage = () => {
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <NavBar />
-      <h1>About Me</h1>
-      <p>This is the About Me page.</p>
+      <div style={{ flex: '1', padding: '20px' }}>
+        <h1>About Me</h1>
+        <p>This is the About Me page.</p>
+      </div>
+      <Footer style={{ backgroundColor: 'black', color: 'white' }} />
     </div>
   );
 };
